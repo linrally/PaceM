@@ -1,7 +1,5 @@
 FROM pacem
 
-WORKDIR /app
-
 COPY apps/backend/ .
 
 EXPOSE 8000
