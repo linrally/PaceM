@@ -1,0 +1,12 @@
+{
+  "name": "PaceM",
+  "private": true,
+  "packageManager": "yarn@3.6.4",
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "scripts": {
+    "backend": "sh apps/backend/start.sh"
+  }
+}
