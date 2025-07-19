@@ -7,6 +7,7 @@
     "libs/*"
   ],
   "scripts": {
-    "backend": "sh apps/backend/start.sh"
+    "backend": "docker-compose up backend",
+    "dev": "docker-compose run --rm --service-ports --entrypoint sh dev"
   }
 }

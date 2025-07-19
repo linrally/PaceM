@@ -1,0 +1,23 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: pacem-backend
+    ports:
+      - "8000:8000"
+    volumes: # not the best for prod
+      - ./apps/backend:/app/backend
+    working_dir: /app/backend
+    command: ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: pacem-dev
+    volumes:
+      - .:/app:/app/src
+    working_dir: /src
+    entrypoint: ""
+    command: ["sh"]
