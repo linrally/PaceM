@@ -1,5 +1,8 @@
+#!/bin/bash
+
 echo "Installing Python dependencies..."
 poetry install
+pipx inject poetry poetry-plugin-shell
 
 echo "Installing NodeJS dependencies..."
 npm install
