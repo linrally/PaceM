@@ -1,5 +1,17 @@
 #!/bin/bash
 
+set -e
+
+if ! command -v pipx &> /dev/null; then
+  echo "❌ pipx is not installed."
+  exit 1
+fi
+
+if ! command -v poetry &> /dev/null; then
+  echo "❌ poetry is not installed. Recommended to install via pipx (pipx install poetry)."
+  exit 1
+fi
+
 echo "Installing Python dependencies..."
 poetry install --with dev
 pipx inject poetry poetry-plugin-shell
