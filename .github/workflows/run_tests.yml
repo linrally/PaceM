@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest  
     strategy:  
       matrix:  
-        python-version: ["3.10"]
+        python-version: ["3.11"]
 
     steps:
           - uses: actions/checkout@v3
@@ -28,8 +28,5 @@ jobs:
 
           - name: Test with pytest
             run: |
-              poetry run coverage run -m pytest -v -s
+              poetry run pytest
 
-          - name: Generate Coverage Report
-            run: |
-              poetry run coverage report -m
