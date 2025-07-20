@@ -13,6 +13,12 @@ Run setup script.
 ./setup.sh
 ```
 
+## Requirements
+- Docker
+- Poetry
+- pipx
+- yarn
+
 ## Contact Us
 * Rally Lin (rally.lin@duke.edu)
 * Andy Ko (andy.ko@duke.edu)
