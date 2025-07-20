@@ -7,6 +7,8 @@
     "libs/*"
   ],
   "scripts": {
-    "backend": "docker-compose up backend"
+    "backend": "docker-compose up backend",
+    "ios": "yarn workspace pacem ios",
+    "android": "yarn workspace pacem android"
   }
 }
