@@ -12,10 +12,10 @@ make base
 
 echo "✅ Setup complete! You can now run:"
 echo "poetry shell      # Activate the virtual environment"
-echo "yarn run backend  # Start the backend server"
+echo "yarn backend  # Start the backend server"
 echo "yarn test         # Run tests"
 echo "yarn start        # Start app"
-echo "yarn run ios      # Run iOS app"
-echo "yarn run android  # Run Android app"
+echo "yarn ios      # Run iOS app"
+echo "yarn android  # Run Android app"
 echo "yarn run          # List all available scripts"
-
+echo "make backend      # Build the backend image (also done automatically by docker-compose on yarn backend)"
