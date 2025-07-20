@@ -5,7 +5,7 @@ poetry install
 pipx inject poetry poetry-plugin-shell
 
 echo "Installing NodeJS dependencies..."
-npm install
+yarn install
 
 echo "Building base Python image..."
 make base
