@@ -1,6 +1,11 @@
 name: Run Unit Tests via Pytest  
 
-on: [push]
+on: 
+  push:
+    paths:
+      - '**.py'
+      - 'pyproject.toml'
+      - 'poetry.lock'
 
 jobs:  
   build:  
