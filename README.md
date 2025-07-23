@@ -15,8 +15,8 @@ Run setup script.
 
 ## Requirements
 - Docker
-- Poetry
 - pipx
+- Poetry
 - yarn
 
 ## Contact Us
